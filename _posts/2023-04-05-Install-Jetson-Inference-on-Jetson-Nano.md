@@ -33,7 +33,7 @@ Simply follow this [instruction](https://developer.nvidia.com/embedded/learn/get
 
 In my case, the up-to-date Ubuntu version for Jetson Nano is `18.04` and the JetPack version is `4.6.3`.
 
-![set-up-jetson-nano](/_posts/2023-04-05-imgs/set-up-jetson-nano.png)
+![set-up-jetson-nano](/assets/img/for_posts/2023-04-05/set-up-jetson-nano.png)
 
 ## Check GPU and CUDA infomation
 
@@ -43,7 +43,7 @@ To check the GPU status on Nano, run the following commands:
 sudo pip3 install jetson-stats
 sudo jtop
 ```
-![jtop](/_posts/2023-04-05-imgs/jtop.png)
+![jtop](/assets/img/for_posts/2023-04-05/jtop.png)
 
 You can also see the installed CUDA version:
 
@@ -54,7 +54,7 @@ lrwxrwxrwx  1 root root   25 Aug  2 01:47 cuda-10 -> /etc/alternatives/cuda-10
 drwxr-xr-x 12 root root 4096 Aug  2 01:47 cuda-10.2
 ```
 
-![check-CUDA-version](/_posts/2023-04-05-imgs/check-CUDA-version.png)
+![check-CUDA-version](/assets/img/for_posts/2023-04-05/check-CUDA-version.png)
 
 
 # Clone the Github repository
@@ -104,7 +104,7 @@ You can select the models you want, or run the tool again later to download more
 
 For now, the default models is enough.
 
-![download-models](/_posts/2023-04-05-imgs/download-models.jpg)
+![download-models](/assets/img/for_posts/2023-04-05/download-models.jpg)
 
 
 # Install Pytorch (optional)
@@ -118,7 +118,7 @@ $ ./install-pytorch.sh
 
 Select the PyTorch package versions for Python 2.7 and/or Python 3.6 that you want installed and hit Enter to continue.
 
-![pytorch-installer](/_posts/2023-04-05-imgs/pytorch-installer.jpg)
+![pytorch-installer](/assets/img/for_posts/2023-04-05/pytorch-installer.jpg)
 
 You can also run this tool again later if you decide that you want to install PyTorch at another time.
 
@@ -189,7 +189,7 @@ $ sudo ldconfig
 
 And congradulations! You have successfully install Jetson Inference on your Jetson Nano.
 
-Now you can run some examples according to [this doc](https://github.com/dusty-nv/jetson-inference/blob/master/docs/detectnet-console-2.md#detecting-objects-from-the-command-line):
+Now you can run some examples according to [this doc](https://github.com/dusty-nv/jetson-inference/blob/master/docs/detectnet-console-2.md#detecting-objects-from-the-command-line), and here are my test output:
 
-
+![123](/assets/img/for_posts/2023-04-05/pedestrians.gif)
 
